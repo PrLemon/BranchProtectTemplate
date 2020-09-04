@@ -1,0 +1,9 @@
+name: "Create branch protection rule"
+on: push
+
+jobs:
+  test: # Test action's functionality
+    runs-on: ubuntu-latest
+    steps:
+    - name: Branch Guardian
+      uses: infamous-riddles/branch-guardian@v1

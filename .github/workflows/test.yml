@@ -9,10 +9,5 @@ jobs:
       uses: infamous-riddles/branch-guardian@v1
       with: 
         PERSONAL-ACCESS-TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-        BASE-BRANCH-PATTERN: '^master\/[a-zA-Z0-9]+$'
+        BASE-BRANCH-PATTERN: 'master'
         REQUIRED-NUMBER-OF-REVIEWERS: 1
-        DISMISS-STALE-PR-APPROVALS-ON-NEW-COMMITS: 'false'
-        REQUIRE-LINEAR-HISTORY: 'false'
-        ALLOW-FORCE-PUSHES: 'false'
-        ALLOW-DELETIONS: 'false'
-        INCLUDE-ADMINISTRATORS: 'false'
